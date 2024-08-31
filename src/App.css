@@ -1,0 +1,22 @@
+ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  /* justify-items: center; */
+}
+a{
+text-decoration: none;
+color: white;
+}
+.nameSection{
+  display: flex; 
+}
+.name{
+  margin-left: 30%;
+  font-size: 150px;
+}
+.nameSection p{
+margin-top: 20%;
+/* border: 2px solid red; */
+margin-left: -0.5%;
+}
