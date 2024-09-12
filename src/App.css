@@ -10,13 +10,24 @@ color: white;
 }
 .nameSection{
   display: flex; 
+  /* border: 2px solid green; */
+  justify-content: center;
+  height: 90vh;
+
 }
 .name{
-  margin-left: 30%;
+  margin-left: 10%;
   font-size: 150px;
+  /* margin-top: 10%; */
+  /* border: 2px solid blue; */
 }
 .nameSection p{
 margin-top: 20%;
 /* border: 2px solid red; */
 margin-left: -0.5%;
 }
+.active {
+  color: red;
+  font-weight: bold;
+}
+

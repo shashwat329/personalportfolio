@@ -1,22 +1,36 @@
-import { useState } from 'react'
-
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Navbar from './componts/Navbar';
+// import About from './pages/About';
+// import Contact from './pages/Contact';
+// import Resume from './pages/Resume';
 
 function App() {
+  const names = ["शाश्वत", "shashwat ", "ಶಾಶ್ವತ್","шашват", "沙什瓦特", "சாஷ்வத்"];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % names.length);
+    }, 1000); 
+
+    return () => clearInterval(interval); // Clean up interval on unmount
+  }, [names.length]);
+
   return (
     <>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="Resume.html">Resume</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-      <li><a href="Lang.html">Lang</a></li>
-    </ul>
-    <div className='nameSection'>
-      <h1 className='name'>शाश्वत</h1>
-      <p>Web and iOS app deveopler.</p>
-    </div>
+  
+    <Navbar />
+  
+
+     
+      <div className='nameSection'>
+        <h1 className='name'>{names[currentIndex]}</h1>
+        <p>Web and iOS app developer.</p>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
