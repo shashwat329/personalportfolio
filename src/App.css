@@ -2,7 +2,6 @@ ul{
   display: flex;
   list-style: none;
   justify-content: space-around;
-  /* justify-items: center; */
 }
 a{
 text-decoration: none;
@@ -10,7 +9,6 @@ color: white;
 }
 .nameSection{
   display: flex; 
-  /* border: 2px solid green; */
   justify-content: center;
   height: 90vh;
 
@@ -18,16 +16,16 @@ color: white;
 .name{
   margin-left: 10%;
   font-size: 150px;
-  /* margin-top: 10%; */
-  /* border: 2px solid blue; */
+  color: yellow; 
+  /* border: 2px solid yellow; */
 }
 .nameSection p{
 margin-top: 20%;
-/* border: 2px solid red; */
-margin-left: -0.5%;
+/* margin-left: -0.5%; */
+/* border: 2px solid green; */
 }
 .active {
-  color: red;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 

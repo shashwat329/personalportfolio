@@ -1,0 +1,50 @@
+ 
+nav {
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: center; 
+  }
+  nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    gap: 20px; 
+  }
+  
+  
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  /* Hover effect for links */
+  nav ul li a:hover {
+    background-color: #555; 
+    border-radius: 5px; 
+  }
+  
+  nav ul li a.active {
+    color: yellow; 
+    font-weight: bold; 
+  
+    border-radius: 5px; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column; 
+      align-items: center; 
+    }
+    nav ul li {
+      margin-bottom: 10px; 
+    }
+  }
