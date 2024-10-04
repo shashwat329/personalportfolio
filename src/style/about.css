@@ -13,4 +13,18 @@ img{
 .text{
     width: 50%;
     margin-left: 100px;
+   
 }
+.greet{
+    font-size: 5rem;
+    color: yellow;
+    /* text-decoration: underline; */
+    /* border: 2px solid white; */
+    margin-bottom: 0px;
+}
+.myname{
+    display: inline;
+    color: yellow
+}
+
+
