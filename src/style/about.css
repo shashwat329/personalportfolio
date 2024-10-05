@@ -53,6 +53,8 @@ img{
     padding-top: 5px;
     /* border: 2px solid red; */
     /* padding: 5px; */
+    padding-right: 15px;
+
     margin: 5x;
     width: 60%;
     margin: auto;
@@ -67,6 +69,7 @@ img{
     margin: 15px 0px 5px 0px;
     width: 60%;
     margin: auto;
+    padding-right: 15px;
    
 }
 .design{
@@ -78,6 +81,8 @@ img{
     margin: 15px 0px 5px 0px;
     width: 60%;
     margin: auto;
+    padding-right: 15px;
+
 }
 .do p{
     width: 60%;
