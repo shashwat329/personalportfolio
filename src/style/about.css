@@ -1,30 +1,86 @@
 img{
-    height: 150px;
-    border: 150px;
+    height: 200px;
+    border: 200px;
     border-radius: 50%;
-    margin-right: 12.5rem;
+    /* margin-right: 12.5rem; */
+    
 }
 .content{
     display: flex;
-   /* justify-content: space-around; */
+   justify-content: space-around;
    /* border: 2px solid red;  */
    align-items: center;
+
 }
 .text{
     width: 50%;
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    /* margin-top: -100px; */
    
 }
 .greet{
     font-size: 5rem;
     color: yellow;
-    /* text-decoration: underline; */
-    /* border: 2px solid white; */
     margin-bottom: 0px;
+    padding: 0px;
 }
 .myname{
     display: inline;
     color: yellow
 }
+.do img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border: 2px solid #BC9953;
+    padding: 5px;
+    
+}
+.img{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    align-items: center;
+    margin: auto;
 
+}
 
+.ios{
+    display: flex;
+    /* border: 1px solid black; */
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding-top: 5px;
+    /* border: 2px solid red; */
+    /* padding: 5px; */
+    margin: 5x;
+    width: 60%;
+    margin: auto;
+
+}
+.web{
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
+    /* border: 2px solid yellow; */
+    padding-top: 5px;
+    margin: 15px 0px 5px 0px;
+    width: 60%;
+    margin: auto;
+   
+}
+.design{
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
+    padding-top: 5px;
+    /* border: 2px solid green; */
+    margin: 15px 0px 5px 0px;
+    width: 60%;
+    margin: auto;
+}
+.do p{
+    width: 60%;
+    /* border: 2px solid green; */
+    text-align: left;
+}
