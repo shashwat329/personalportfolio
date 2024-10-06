@@ -1,0 +1,33 @@
+.skills-section {
+    margin: 20px 0;
+    /* background-color: #1e1e1e; */
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .skill-bar {
+    margin-bottom: 20px;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    background-color: #2e2e2e;
+    border-radius: 20px;
+    height: 10px;
+  }
+  
+  .progress {
+    background-color: yellow;
+    height: 100%;
+    border-radius: 20px;
+  }
+  

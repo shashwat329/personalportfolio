@@ -1,0 +1,24 @@
+
+.head{
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    /* border: 2px solid red; */
+}
+
+.head img{
+    filter: invert();
+    height: 50px;
+    /* width: auto; */
+    /* border: 2px solid yellow; */
+    padding: 10px;
+    border-radius: 0;
+
+}
+.edu{
+    display: flex;
+    /* border: 2px solid yellow; */
+} 
+.experience{
+    width: 40%;
+}
