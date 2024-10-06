@@ -1,0 +1,39 @@
+.contact-side {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .profile-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 16px;
+    /* color: #fbc02d; */
+    color: yellow;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info .contact-item {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item strong {
+    display: block;
+    font-size: 14px;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    color: #fbc02d;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
