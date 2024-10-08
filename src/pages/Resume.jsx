@@ -23,21 +23,21 @@ const Resume = () => {
               <h3>Education</h3>
             </div>
             <div className="edu">
-            <CircleWithNumber count={0} />
+              <CircleWithNumber count={0} />
               <div className="eduinfo">
                 ABES ENGINNERING COLLEGE
                 <p>2022-2024</p>
               </div>
             </div>
             <div className="edu">
-            <CircleWithNumber count={1} />
+              <CircleWithNumber count={1} />
               <div className="eduinfo">
                 Trinity Global School
                 <p>2022-2024</p>
               </div>
             </div>
             <div className="edu">
-            <CircleWithNumber count={2} />
+              <CircleWithNumber count={2} />
               <div className="eduinfo">
                 St Mary High School
                 <p>2022-2024</p>
@@ -45,14 +45,24 @@ const Resume = () => {
             </div>
           </div>
           <div className="experience">
-          <div className="subheading">
-              <h3>Experince</h3>
-              <p className='experiencetxt'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur autem placeat reprehenderit molestiae labore, mollitia quae itaque dolorem, quis ab modi in porro corrupti voluptas blanditiis excepturi enim necessitatibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo, nihil ipsa distinctio nesciunt eius.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit libero, laboriosam blanditiis quo distinctio maxime, explicabo harum aperiam quod repellendus saepe mollitia consequuntur accusantium nulla aliquid obcaecati ipsum porro..</p>
+            <div className="subheading">
+              <h3>Projects</h3>
+              <p className='experiencetxt'>
+                <h3><a href="">WEATHERAPP</a></h3>Swift, SwiftUI, openweathermap, Xcode, Json, Api integration. <br />
+                WeatherApp is a sleek, intuitive weather application designed to keep users informed about current weather conditions
+                and forecasts. Built with Swift, SwiftUI, and leveraging the OpenWeatherMap API, WeatherWise exemplifies modern
+                iOS app development, this app provides real-time weather updates and detailed forecasts, all through a beautiful and
+                user-friendly interface. <br /> <br/>
+                <h3><a href="">GUESS THE FLAG</a> </h3>Swift,UIKIT,Xcode,Storyboard,Cocoa Touch <br/>
+                ”Guess the Flag” is an engaging and educational app designed to test and improve your knowledge of world flags. With an
+                intuitive interface and a vast collection of flags from around the globe, this app provides an entertaining way to learn
+                about different countries and their flags.Built with Swift, UIKit, Xcode, and Storyboard.
+              </p>
             </div>
           </div>
         </div>
         <SkillsSection />
-        
+
       </div >
     </>
   )
