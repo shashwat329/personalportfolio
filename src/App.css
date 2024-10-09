@@ -10,7 +10,7 @@ color: white;
 .nameSection{
   display: flex; 
   justify-content: center;
-  height: 90vh;
+align-items: center;
 
 }
 .name{
@@ -20,7 +20,7 @@ color: white;
   /* border: 2px solid yellow; */
 }
 .nameSection p{
-margin-top: 20%;
+margin-top: 11%;
 /* margin-left: -0.5%; */
 /* border: 2px solid green; */
 }
