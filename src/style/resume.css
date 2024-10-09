@@ -7,8 +7,9 @@
 }
 
 .head img{
+    margin-top: 44px;
     filter: invert();
-    height: 50px;
+    height: 30px;
     /* width: auto; */
     /* border: 2px solid yellow; */
     padding: 10px;
@@ -17,8 +18,33 @@
 }
 .edu{
     display: flex;
-    /* border: 2px solid yellow; */
+    /* border: 2px solid yellow */
 } 
-.experience{
+.subheading{
+    display: flex;
+    margin: auto;
     width: 40%;
+}
+.project img{
+    margin-top: 5px;
+    filter: invert();
+    height: 20px;
+}
+.resumemain{
+    margin-top: 0px;
+    display: flex;
+    justify-content:space-between;
+    /* border: 2px solid blue; */
+
+}
+.education{
+    
+    /* border: 2px solid green; */
+    /* display: flex; */
+    margin: auto;
+    margin-top: 20px;
+
+}
+h4{
+    color: blanchedalmond;
 }
