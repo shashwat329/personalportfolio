@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import '../style/Home.css'
 const Home = () => {
 
   const names = ["शाश्वत", "Shashwat ", "ಶಾಶ್ವತ್","шашват", "沙什瓦特", "சாஷ்வத்"];
