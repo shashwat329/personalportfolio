@@ -7,4 +7,21 @@ h1 {
 .namesection{
 align-items:  center;    
 }
-
+.nameSection p{
+    margin-top: 9%;
+}
+@media only screen and (max-width: 767px) {
+    h1.name{
+        font-size: 70px;
+        margin: 2px;
+        /* border: 2px solid red; */
+    
+    }
+    .nameSection{
+        flex-direction: column;
+        /* margin-top: 0px; */
+    }
+    .nameSection p{
+       margin: 0px;
+    }
+  }

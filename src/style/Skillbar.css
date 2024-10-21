@@ -30,4 +30,10 @@
     height: 100%;
     border-radius: 20px;
   }
+  @media only screen and (max-width: 767px) {
+    .skills-section{
+      margin: auto;
+      width: 80%;
+    }
+  }
   

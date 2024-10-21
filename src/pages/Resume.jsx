@@ -50,7 +50,6 @@ const Resume = () => {
         <div className="project">
         <h1>Projects</h1>
           <div className="subheading">
-            
             <p className='projectetxt'>
               <h3> <a href="https://github.com/shashwat329/swiftprojects"> WEATHERAPP<img src={redirect} alt="redirecticon" /></a> </h3>
                <h4>Swift, SwiftUI, openweathermap, Xcode, Json, Api integration.</h4>

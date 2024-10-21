@@ -85,3 +85,28 @@ img{
     /* border: 2px solid green; */
     text-align: left;
 }
+@media only screen and (max-width: 767px) {
+    h1{
+        font-size: 3rem;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .greet{
+        font-size: 3rem;
+    }
+    .text{
+        width: 100%;
+        margin: 0px 1rem;
+        padding: 0px 1rem;
+    }
+    .ios,.web,.design{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+    /* margin: 0px 2rem; */
+    }
+    .do p{
+        margin: auto;
+    }
+}

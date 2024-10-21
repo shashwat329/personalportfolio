@@ -5,3 +5,11 @@ justify-content: center;
 box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
 
 }
+@media only screen and (max-width: 767px) {
+    .container{
+        flex-direction: column;
+    }
+   .side{
+    flex-direction: column;
+   } 
+}

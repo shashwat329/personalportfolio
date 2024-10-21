@@ -48,3 +48,17 @@
 h4{
     color: blanchedalmond;
 }
+@media only screen and (max-width: 767px) {
+    .resumemain{
+        flex-direction: column;
+        width: 100%;
+    }
+    .skills-section{
+        width: 80%;
+    }
+    .projectetxt{
+        /* border: 2px solid blue; */
+        margin: -10px 0px 0px -80px;
+    }
+   
+}
