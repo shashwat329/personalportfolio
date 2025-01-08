@@ -4,9 +4,6 @@ h1 {
     font-size: 5rem; 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
 }
-.namesection{
-align-items:  center;    
-}
 .nameSection p{
     margin-top: 9%;
 }
@@ -14,8 +11,6 @@ align-items:  center;
     h1.name{
         font-size: 70px;
         margin: 2px;
-        /* border: 2px solid red; */
-    
     }
     .nameSection{
         flex-direction: column;

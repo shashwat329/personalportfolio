@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import Squares from '../components/Squares';
 import '../style/Home.css'
 const Home = () => {
 
@@ -17,9 +18,11 @@ const Home = () => {
   return (
     <>
     <div className='nameSection'>
-        <h1 className='name'>{names[currentIndex]}</h1>
+        <h1 className='name'>
+        {names[currentIndex]}
+        </h1>
         <p>Web and iOS app developer.</p>
-      </div>
+    </div>  
     </>
   )
 }
