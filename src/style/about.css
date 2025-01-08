@@ -40,35 +40,7 @@ img{
     margin: auto;
 
 }
-
-.ios{
-    display: flex;
-    /* border: 1px solid black; */
-    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    padding-top: 5px;
-    /* border: 2px solid red; */
-    /* padding: 5px; */
-    padding-right: 15px;
-
-    margin: 5x;
-    width: 60%;
-    margin: auto;
-
-}
-.web{
-    display: flex;
-    border-radius: 5px;
-    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
-    /* border: 2px solid yellow; */
-    padding-top: 5px;
-    margin: 15px 0px 5px 0px;
-    width: 60%;
-    margin: auto;
-    padding-right: 15px;
-   
-}
-.design{
+.card{
     display: flex;
     border-radius: 5px;
     box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
@@ -77,13 +49,15 @@ img{
     margin: 15px 0px 5px 0px;
     width: 60%;
     margin: auto;
-    padding-right: 15px;
+    /* padding-right: 15px; */
 
+}
+.custom-spotlight-card{
+    display: flex;
 }
 .do p{
     width: 60%;
-    /* border: 2px solid green; */
-    text-align: left;
+  text-align: left;
 }
 @media only screen and (max-width: 767px) {
     h1{
@@ -100,13 +74,16 @@ img{
         margin: 0px 1rem;
         padding: 0px 1rem;
     }
-    .ios,.web,.design{
+    .custom-spotlight-card{
     flex-direction: column;
     width: 100%;
     margin-bottom: 2rem;
-    /* margin: 0px 2rem; */
     }
     .do p{
         margin: auto;
+    }
+    .card{   
+        width: 100%;
+        margin: 20px;
     }
 }

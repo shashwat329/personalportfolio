@@ -1,0 +1,18 @@
+Squares{
+    z-index: -1;
+    border: 2px solid yellow;
+    opacity: 0.9;
+}
+.testing{
+    position: absolute; 
+    top: 47%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+}
+.testing p{
+    /* background-color: black; */
+    font-size: 8rem;
+    color: yellow;
+}
