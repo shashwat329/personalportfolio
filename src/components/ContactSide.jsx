@@ -6,7 +6,7 @@ const ContactSide = () => {
     <div className="contact-side">
       <div className="profile-info">
         <h2>Kumar Shashwat</h2>
-        <p className="title">Web developer</p>
+        <p className="title">Web and iOS developer</p>
       </div>
       
       <div className="contact-info">
