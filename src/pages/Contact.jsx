@@ -13,9 +13,8 @@ const Contact = () => {
         <div className="form">
           <ContactForm />
         </div>
-
-        <Dock collapsible={false} position="left" responsive="bottom" />
       </div>
+      <Dock collapsible={false} position="bottom" responsive="bottom" />
     </>
   )
 }

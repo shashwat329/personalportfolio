@@ -16,3 +16,7 @@ Squares{
     font-size: 8rem;
     color: yellow;
 }
+.welcomemsg{
+    font-size: 2rem;
+    border: 2px solid yellow;
+}

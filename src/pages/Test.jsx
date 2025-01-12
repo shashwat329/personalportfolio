@@ -1,14 +1,39 @@
-import React from "react";
+// import React from "react";
+import React, { useState, useEffect } from 'react';
 import Squares from "../components/Squares";
 import "../style/test.css";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 
+const WelcomeMsg = () =>{
+  const [sentence, setSentence] = useState('');
+  const letters = ['H', ' ','i', ',', ' ', 'w', 'e', 'l', 'c', 'o', 'm', 'e', ' ', 't', 'o', ' ', 'm', 'y', ' ', 'w', 'e', 'b', 's', 'i', 't', 'e', '!'];
+  
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setSentence((prev) => prev + letters[index]);
+      index += 1;
+      console.log(index);
+      if (index === letters.length -1) {
+        clearInterval(interval);
+      }
+    }, 300); // Change 300 to control the speed of typing
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, []);
+  return <p 
+  style={{ 
+    position: "absolute", top: "20%", left: "2rem", transform: "translateY(-50%)", color: "#fff", zIndex: 10,fontSize: "2rem",
+   }}>
+    {sentence}
+    </p>;
+};
 const Model = () => {
-  const gltf = useGLTF("/model.glb"); // Path to your .glb file in the public folder
+  const gltf = useGLTF("/model.glb"); 
   return (<primitive object={gltf.scene}
      scale={[2, 2, 2]} 
-     position={[0, -1, 0]} // Adjust position: x=0, y=-1, z=0
+     position={[0, -1, 0]} 
       />);
 };
 
@@ -24,20 +49,21 @@ const Test = () => {
       />
 
       {/* Canvas for 3D Model */}
+     <WelcomeMsg classname = "welcomemsg"/>
       <Canvas
         style={{
           position: "absolute", // Overlay the Canvas
           top: 0,
-          left: 0,
+          left: 300,
           width: "100%",
           height: "100%",
-          pointerEvents: "none", // Make Canvas non-interactive
+          pointerEvents: "all", // Make Canvas non-interactive
         }}
         camera={{ position: [0, 1, 5] }}
       >
         <ambientLight intensity={0.3} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
-        <Model />
+        <Model classname="model" />
         <OrbitControls enableZoom={false} /> {/* Disable Zoom */}
         <Environment preset="sunset" />
       </Canvas>

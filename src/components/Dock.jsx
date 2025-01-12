@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
+import { FaInstagram, FaLinkedin ,FaGithub } from 'react-icons/fa';
+import { FaThreads, FaXTwitter } from 'react-icons/fa6';
 import '../style/contact.css';
 
 const Dock = ({ position = 'bottom', collapsible = false, responsive = 'right' }) => {
@@ -7,7 +9,13 @@ const Dock = ({ position = 'bottom', collapsible = false, responsive = 'right' }
   const [isDockVisible, setDockVisible] = useState(!collapsible);
   const [currentPosition, setCurrentPosition] = useState(position);
 
-  const dockItems = ['🍕', '🍔', '🌭', '🌮', '🌯'];
+  const dockItems = [
+    { icon: <FaLinkedin size={30} />, link: 'https://www.linkedin.com/in/kumar-shashwat27/' },
+    { icon: <FaXTwitter size={30} />, link: 'https://x.com/Shsshwtt' },
+    { icon: <FaInstagram size={30} />, link: 'https://www.instagram.com/shsshwtt/' },
+    { icon: <FaThreads size={30} />, link: 'https://www.threads.net/@shsshwtt' },
+    { icon: <FaGithub size={30} />, link: 'https://github.com/shashwat329' },
+  ];
 
   const handleMouseEnter = (index) => {
     setHoverIndex(index);
@@ -29,6 +37,10 @@ const Dock = ({ position = 'bottom', collapsible = false, responsive = 'right' }
     }
   };
 
+  const handleIconClick = (link) => {
+    window.open(link, '_blank', 'noopener,noreferrer');
+  };
+
   useEffect(() => {
     const updatePosition = () => {
       if (responsive && window.innerWidth <= 768) {
@@ -42,7 +54,7 @@ const Dock = ({ position = 'bottom', collapsible = false, responsive = 'right' }
 
     window.addEventListener('resize', updatePosition);
     return () => window.removeEventListener('resize', updatePosition);
-  }, [position, responsive, collapsible]);
+  }, [position, responsive]);
 
   const getDockStyle = () => {
     const flexDirection = currentPosition === 'left' || currentPosition === 'right' ? 'column' : 'row';
@@ -50,33 +62,18 @@ const Dock = ({ position = 'bottom', collapsible = false, responsive = 'right' }
   };
 
   const scaleSpring = (index) => {
-    const translateValue = (() => {
-      if (hoverIndex === index) {
-        switch (currentPosition) {
-          case 'left':
-            return 'translateX(5px) translateY(0px)';
-          case 'right':
-            return 'translateX(-5px) translateY(0px)';
-          case 'top':
-            return 'translateX(0px) translateY(5px)';
-          case 'bottom':
-            return 'translateX(0px) translateY(-5px)';
-          default:
-            return 'translateX(0px) translateY(0px)';
-        }
-      } else {
-        return 'translateX(0px) translateY(0px)';
-      }
-    })();
+    const translateValue = hoverIndex === index
+      ? currentPosition === 'left' ? 'translateX(5px)' :
+        currentPosition === 'right' ? 'translateX(-5px)' :
+        currentPosition === 'top' ? 'translateY(5px)' : 'translateY(-5px)'
+      : 'translate(0px, 0px)';
 
-    // eslint-disable-next-line react-hooks/rules-of-hooks
     return useSpring({
-      transform:
-        hoverIndex === index
-          ? `scale(1.5) ${translateValue}`
-          : hoverIndex !== null && Math.abs(hoverIndex - index) === 1
-            ? `scale(1.3) translateX(0px) translateY(0px)`
-            : `scale(1) translateX(0px) translateY(0px)`,
+      transform: hoverIndex === index
+        ? `scale(1.5) ${translateValue}`
+        : hoverIndex !== null && Math.abs(hoverIndex - index) === 1
+          ? 'scale(1.3)'
+          : 'scale(1)',
       config: { tension: 200, friction: 15 },
     });
   };
@@ -95,13 +92,14 @@ const Dock = ({ position = 'bottom', collapsible = false, responsive = 'right' }
       <animated.div className="dock" style={{ ...getDockStyle(), ...visibilitySpring }}>
         {dockItems.map((item, index) => (
           <animated.div
-            key={item}
+            key={index}
             className="dock-item"
             style={scaleSpring(index)}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
+            onClick={() => handleIconClick(item.link)}
           >
-            {item}
+            {item.icon}
           </animated.div>
         ))}
       </animated.div>
