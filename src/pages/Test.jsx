@@ -1,7 +1,7 @@
 // import React from "react";
 import React, { useState, useEffect } from 'react';
 import Squares from "../components/Squares";
-import "../style/test.css";
+import "../style/Test.css";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 
@@ -31,6 +31,7 @@ const WelcomeMsg = () =>{
 };
 const Model = () => {
   const gltf = useGLTF("/model.glb"); 
+  
   return (<primitive object={gltf.scene}
      scale={[2, 2, 2]} 
      position={[0, -1, 0]} 
@@ -54,8 +55,8 @@ const Test = () => {
         style={{
           position: "absolute", // Overlay the Canvas
           top: 0,
-          left: 300,
-          width: "100%",
+          left: 450,
+          width: "63%",
           height: "100%",
           pointerEvents: "all", // Make Canvas non-interactive
         }}
