@@ -52,7 +52,7 @@ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
 .dock-item:hover {
   z-index: 2;
   background-color: #111;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: background-color 0.3s ease,
   transform 0.3s ease,
   box-shadow 0.3s ease;
