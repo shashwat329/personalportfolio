@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import Test from './pages/test';
+import Test from './pages/Test';
 import './App.css';
 function App() {
 
