@@ -41,10 +41,6 @@ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
   font-size: 1.5em;
   align-items: center;
   justify-content: center;
-  transition:
-    transform 0.3s ease-out,
-    background-color 0.3s ease-out; 
-    will-change: transform;
   cursor: pointer;
   pointer-events: auto;
 }
