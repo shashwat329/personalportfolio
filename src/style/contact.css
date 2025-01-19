@@ -25,7 +25,6 @@ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   transition:
     opacity 0.2s ease-out,
-    transform 0.2s ease-out;
 }
 .dock-item {
   background-color: #060606;
@@ -41,10 +40,6 @@ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
   font-size: 1.5em;
   align-items: center;
   justify-content: center;
-  transition:
-    transform 0.3s ease-out,
-    background-color 0.3s ease-out; 
-    will-change: transform;
   cursor: pointer;
   pointer-events: auto;
 }
@@ -52,10 +47,7 @@ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
 .dock-item:hover {
   z-index: 2;
   background-color: #111;
-  transform: scale(1.1);
-  transition: background-color 0.1s ease,
-  transform 0.1s ease,
-  box-shadow 0.1s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6)
 }
 
 .dock-container.right {
