@@ -25,7 +25,6 @@ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   transition:
     opacity 0.2s ease-out,
-    transform 0.2s ease-out;
 }
 .dock-item {
   background-color: #060606;
@@ -48,6 +47,7 @@ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
 .dock-item:hover {
   z-index: 2;
   background-color: #111;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6)
 }
 
 .dock-container.right {
