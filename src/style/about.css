@@ -1,7 +1,8 @@
 img{
-    height: 200px;
-    border: 200px;
+    height: 300px;
+    /* border: 300px; */
     border-radius: 50%;
+    border: 5px solid wheat;
     
 }
 .content{
@@ -43,7 +44,7 @@ img{
 .card{
     display: flex;
     border-radius: 5px;
-    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3); */
     padding-top: 5px;
     /* border: 2px solid green; */
     margin: 15px 0px 5px 0px;

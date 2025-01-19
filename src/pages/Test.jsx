@@ -15,7 +15,7 @@ const WelcomeMsg = () =>{
       setSentence((prev) => prev + letters[index]);
       index += 1;
       console.log(index);
-      if (index === letters.length -1) {
+      if (index === letters.length-1) {
         clearInterval(interval);
       }
     }, 300); // Change 300 to control the speed of typing

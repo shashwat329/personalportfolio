@@ -37,7 +37,7 @@ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
   border: 2px solid #ffffff1c;
   display: flex;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   font-size: 1.5em;
   align-items: center;
   justify-content: center;
@@ -53,9 +53,9 @@ box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.3);
   z-index: 2;
   background-color: #111;
   transform: scale(1.1);
-  transition: background-color 0.3s ease,
-  transform 0.3s ease,
-  box-shadow 0.3s ease;
+  transition: background-color 0.1s ease,
+  transform 0.1s ease,
+  box-shadow 0.1s ease;
 }
 
 .dock-container.right {
