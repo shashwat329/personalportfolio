@@ -70,7 +70,7 @@ const Dock = ({ position = 'bottom', collapsible = false, responsive = 'right' }
 
     return useSpring({
       transform: hoverIndex === index
-        ? `scale(1.5) ${translateValue}`
+        ? translateValue
         : hoverIndex !== null && Math.abs(hoverIndex - index) === 1
           ? 'scale(1)'
           : 'scale(1)',
