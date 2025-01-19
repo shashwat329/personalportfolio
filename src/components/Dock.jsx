@@ -72,7 +72,7 @@ const Dock = ({ position = 'bottom', collapsible = false, responsive = 'right' }
       transform: hoverIndex === index
         ? `scale(1.5) ${translateValue}`
         : hoverIndex !== null && Math.abs(hoverIndex - index) === 1
-          ? 'scale(1.3)'
+          ? 'scale(1)'
           : 'scale(1)',
       config: { tension: 200, friction: 15 },
     });
