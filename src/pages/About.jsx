@@ -1,5 +1,5 @@
 import React from 'react'
-import shashwat from '../assets/shashwat2.png';
+import shashwat from '../assets/shashwat.jpeg';
 import appicon from '../assets/iconapp.png'
 import icondesign from '../assets/icondesign.png';
 import icondev from '../assets/icondev.png'
@@ -11,7 +11,7 @@ export const About = () => {
       <h1>ABOUT ME</h1>
      
       <div className="content">
-        <img src={shashwat} alt="Kumar Shashwat" />
+        <img className = "about-img" src={shashwat} alt="Kumar Shashwat" />
         {/* <img src={shashwat2} alt="Kumar Shashwat" /> */}
         <div className="text">
           <p className='greet'>HELLO 👋 </p>
