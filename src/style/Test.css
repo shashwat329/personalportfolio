@@ -1,4 +1,4 @@
-Squares{
+/* Squares{
     z-index: -1;
     border: 2px solid yellow;
     opacity: 0.9;
@@ -9,14 +9,11 @@ Squares{
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
-    /* border: 2px solid red; */
 }
 .testing p{
-    /* background-color: black; */
     font-size: 8rem;
     color: yellow;
 }
 .welcomemsg{
     font-size: 2rem;
-    /* border: 2px solid yellow; */
-}
+} */
