@@ -5,29 +5,40 @@ import "../style/Test.css";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 
-const WelcomeMsg = () =>{
-  const [sentence, setSentence] = useState('');
-  const letters = ['H', ' ','i', ',', ' ', 'w', 'e', 'l', 'c', 'o', 'm', 'e', ' ', 't', 'o', ' ', 'm', 'y', ' ', 'w', 'e', 'b', 's', 'i', 't', 'e', '!'];
-  
+const WelcomeMsg = () => {
+  const [sentence, setSentence] = useState("");
+  const letters = ["H"," ", "i", " ", "w", "e", "l", "c", "o", "m", "e", " ", "t", "o", " ", "m", "y", " ", "w", "e", "b", "s", "i", "t", "e", "!"];
+
   useEffect(() => {
+    setSentence("");
     let index = 0;
     const interval = setInterval(() => {
-      setSentence((prev) => prev + letters[index]);
-      index += 1;
-      console.log(index);
-      if (index === letters.length-1) {
+      if (index < letters.length) {
+        setSentence(prev => prev + (letters[index] || ""));
+        index++;
+      } else {
         clearInterval(interval);
       }
-    }, 300); // Change 300 to control the speed of typing
+    }, 300);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval);
   }, []);
-  return <p 
-  style={{ 
-    position: "absolute", top: "20%", left: "2rem", transform: "translateY(-50%)", color: "#fff", zIndex: 10,fontSize: "2rem",
-   }}>
-    {sentence}
-    </p>;
+
+  return (
+    <p
+      style={{
+        position: "absolute",
+        top: "20%",
+        left: "2rem",
+        transform: "translateY(-50%)",
+        color: "#fff",
+        zIndex: 10,
+        fontSize: "2rem",
+      }}
+    >
+      {sentence}
+    </p>
+  );
 };
 const Model = () => {
   const gltf = useGLTF("/model.glb"); 
