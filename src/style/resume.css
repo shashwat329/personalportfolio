@@ -21,11 +21,11 @@
     /* border: 2px solid yellow */
 } 
 .subheading{
-    display: flex;
+    /* display: flex; */
     margin: auto;
-    width: 40%;
+    width: 70%;
 }
-.project img{
+.redirectionicon{
     margin-top: 5px;
     filter: invert();
     height: 20px;
@@ -48,6 +48,19 @@
 h4{
     color: blanchedalmond;
 }
+.projectsection{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center; 
+    padding: 10px;
+}
+.projectsectionimg{
+  height: 600px;
+  /* opacity: 0; */
+}
+
+  
 @media only screen and (max-width: 767px) {
     .resumemain{
         flex-direction: column;
@@ -59,6 +72,9 @@ h4{
     .projectetxt{
         /* border: 2px solid blue; */
         margin: -10px 0px 0px -80px;
+    }
+    .projectsection{
+        flex-direction: column;
     }
    
 }
