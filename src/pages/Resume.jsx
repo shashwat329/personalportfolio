@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/resume.css'
 import resumeicon from '../assets/download_resume.png'
-import resume from '../../public/Kumar_Shashwat.pdf';
+import resume from '../../public/KumarShashwat_ios.pdf';
 import CircleWithNumber from '../components/CirclewithNumber';
 import SkillsSection from '../components/SkillsSection';
 import redirect from '../assets/maximize.png'
@@ -49,7 +49,7 @@ const Resume = () => {
         </div>
 
         {/* put the div section below me */}
-        <div className="project">
+        <div className="project" id='projects'>
           <h1>Projects</h1>
           <div className="subheading">
             <section className='projectsection'>
